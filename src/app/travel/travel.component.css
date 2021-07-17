@@ -1,0 +1,77 @@
+.travel {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+    background-color: #fffafa;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2em;
+    background-color: #afeeee;
+    margin: 1.5em 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+.image {
+    height: 45%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    margin: 1em 0;
+    padding: 10px 20px;
+    background-color: #008b8b;
+    border: none;
+    color: #fffafa;
+    transition: 0.5s;
+}
+
+button:hover {
+        border: #fe4eda 1px solid;
+}
+
+@media screen and (min-width: 576px){
+       
+    .travel {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+       width: 44%;
+  
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (min-width:1201px){
+
+    .card {
+       width: 24%;
+  
+    }
+
+}

@@ -1,0 +1,21 @@
+<div class="checkout">
+<h3>Cart</h3>
+
+<div class="cartitems" *ngFor="let travel of cart">
+
+    <ul>
+        <li>{{travel.destination}}</li>
+        <li>{{travel.price}} €</li>
+    </ul>
+    
+</div>
+
+<div id="total">Total: {{total}} €</div>
+
+<form [formGroup]="checkOut" (ngSubmit)="onSubmit(checkOut.value)">
+    <input type="text" formControlName="name" placeholder="Enter your Name">
+    <input type="text" formControlName="address" placeholder="Enter your Email">
+    <button type="submit">Purchase</button>
+</form>
+
+</div>

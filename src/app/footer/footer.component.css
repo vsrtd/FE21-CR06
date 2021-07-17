@@ -1,0 +1,12 @@
+.footer {
+ color: #fffafa;
+ background-color: #008b8b;
+ height: 5em;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+}

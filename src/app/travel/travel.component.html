@@ -1,0 +1,17 @@
+<div class="travel">
+    <div class="card" *ngFor="let travel of travels">
+        <div class="text">
+            <h2>{{travel.destination}}</h2>
+            <p>{{travel.date}} , {{travel.duration}}</p>
+            <p>{{travel.description}}</p>
+            <p>{{travel.price}} €</p>
+        </div>
+
+        <div class="image">
+            <img src="{{travel.image}}" alt="">
+        </div>
+        <button (click)="addToCart(travel)">Add to Cart</button>
+    </div>
+    
+</div>
+

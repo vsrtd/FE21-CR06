@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    height: 20em;
+    
+   }
+
+.hero::before {
+    content:"";
+    background-image: url(../../img/header.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.textcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    color:  #fffafa;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-shadow:  #008b8b 2px 2px;
+    font-weight: bold;
+    position: relative;
+}
+
+button {
+    margin: 1em 0;
+    padding: 10px 20px;
+    background-color: #008b8b;
+    border: none;
+    color: #fffafa;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    
+    border: #fe4eda 2px solid;
+}
